@@ -1,0 +1,11 @@
+cmake_minimum_required (VERSION 2.8)
+set (PROJ_NAME "assimp")
+project (${PROJ_NAME})
+
+if (IOS)
+    export_library(${PROJ_NAME})
+elseif (OSX)
+    export_library(${PROJ_NAME})
+elseif (ANDROID)
+    export_library(${PROJ_NAME})
+endif ()
